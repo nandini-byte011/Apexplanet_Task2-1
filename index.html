@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Enhanced Contact Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📞 Get in Touch</h1>
+    <form id="contactForm">
+      <div class="field">
+        <label for="name">👤 Full Name</label>
+        <input type="text" id="name" placeholder="e.g. Bharathi Reddy" />
+      </div>
+
+      <div class="field">
+        <label for="email">📧 Email Address</label>
+        <input type="email" id="email" placeholder="e.g. you@example.com" />
+      </div>
+
+      <div class="field">
+        <label for="phone">📱 Phone Number</label>
+        <input type="tel" id="phone" placeholder="e.g. +91-9876543210" />
+      </div>
+
+      <div class="field">
+        <label for="subject">📌 Subject</label>
+        <input type="text" id="subject" placeholder="Reason for contact" />
+      </div>
+
+      <div class="field">
+        <label for="type">📝 Type of Query</label>
+        <select id="type">
+          <option value="">-- Select --</option>
+          <option value="feedback">Feedback</option>
+          <option value="support">Support</option>
+          <option value="collab">Collaboration</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="message">✉️ Your Message</label>
+        <textarea id="message" placeholder="Write your message..."></textarea>
+      </div>
+
+      <button type="submit">🚀 Submit</button>
+      <p id="errorMsg"></p>
+    </form>
+  </div>
+
+  <script src="form-validation.js"></script>
+</body>
+</html>
